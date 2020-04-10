@@ -336,7 +336,7 @@
                 "params": params
             };
 
-            if (isObject(params) && !isEmpty(params)) {
+            if ((isObject(params) || isString(params)) && !isEmpty(params)) {
                 message.params = params;
             }
 
@@ -351,7 +351,7 @@
                 "id": id
             };
 
-            if (isObject(params) && !isEmpty(params)) {
+            if ((isObject(params) || isString(params)) && !isEmpty(params)) {
                 message.params = params;
             }
 
